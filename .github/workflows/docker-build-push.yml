@@ -24,3 +24,6 @@ jobs:
 
       - name: Push Docker image
         run: docker push ghcr.io/aacict/flask-server:latest
+
+        # Further more ssh to ec2 instance and pull and again run the container removing the previous one to see upto date app
+
