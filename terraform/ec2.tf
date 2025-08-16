@@ -29,7 +29,7 @@ resource "aws_instance" "flask_server" {
             sudo apt install docker.io -y
             echo "${var.ghcr_pat}" | sudo docker login ghcr.io -u aacict --password-stdin
             sudo docker pull ghcr.io/aacict/flask-server:latest
-            sudo docker run -d -p 5000:5000 ghcr.io/aacict/flask-server:latest
+            sudo docker run -d -p 3000:5000 ghcr.io/aacict/flask-server:latest
             EOF
 
   tags = {
