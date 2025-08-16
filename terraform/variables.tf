@@ -1,0 +1,14 @@
+# Application name
+variable "app_name" {
+  default = "flask-server-via-terra"
+}
+
+# Env name
+variable "env_name" {
+  default = "dev"
+}
+
+# EBS platform
+variable "solution_stack_name " {
+  default = "64bit Amazon Linux 2023 v4.6.3 running Docker" #we can choose the solution stack name from https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platform-history-docker.html
+}
