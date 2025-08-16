@@ -1,0 +1,9 @@
+services:
+  web:
+    build:
+      context: ./app
+    ports:
+      - 3000:5000
+    volumes:
+      - ./app:/app
+    restart: unless-stopped
